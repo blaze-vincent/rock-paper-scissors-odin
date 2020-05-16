@@ -10,10 +10,12 @@ function playRound(playerSelection, computerSelection){
         "Scissors": "Rock"
     };
     if(winnerDict[playerSelection] === computerSelection){
-        console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
+        return(`You Lose! ${computerSelection} beats ${playerSelection}`);
     } else if(playerSelection === computerSelection){
-        console.log(`Tie! You both chose ${playerSelection}`);
+        return(`Tie! You both chose ${playerSelection}`);
+    } else if(winnerDict[computerSelection] === playerSelection){
+        return(`You Win! ${playerSelection} beats ${computerSelection}`);
     } else {
-        console.log(`You Win! ${playerSelection} beats ${computerSelection}`);
+        console.error("invalid input");
     }
 }
