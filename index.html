@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<header>
-    <h1>ROCK PAPER SCISSORS</h1>
-</header>
 <body>
-    
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+    <div id="player-decision" class="move-display">
+        <div id="choices">
+            <p id="rock">Rock</p>
+            <p id="paper">Paper</p>
+            <p id="scissors">Scissors</p>
+        </div>
+    </div>
+    <div id="computer-decision" class="move-display"> 
+        <p id="computer-move">???</p>
+    </div>
+    <div id="results-display">
+        <p id="results-text">
+        </p>
+    </div>
+    <div id="trackers">
+        <p id="rounds-tracker"></p>
+        <p id="wins-tracker"></p>
+    </div>
 </body>
 <script src="scripts/rock-paper-scissors.js"></script>
 </html>
